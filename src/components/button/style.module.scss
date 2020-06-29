@@ -1,6 +1,7 @@
 @import "../config";
 
 .button {
+  position: relative;
   text-transform: uppercase;
   border-radius: $button-border-radius;
   border: $button-border;
