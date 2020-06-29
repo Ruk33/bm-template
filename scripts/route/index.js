@@ -5,16 +5,16 @@ const fs = require('fs');
 
 function printHelp() {
     console.log('BlackMountain - Route generator')
-    console.log('Usage: bm route <guest|auth> <name> <uri>');
+    console.log('Usage: <guest|auth> <name> <uri>');
     console.log('');
-    console.log('Example: bm route guest home /home');
-    console.log('Example: bm route auth profile /profile');
-    console.log('Example: bm route auth show-post /posts/:id');
-    console.log('Example: bm route auth show-post /posts/:user/:id/delete');
+    console.log('Example: guest home /home');
+    console.log('Example: auth profile /profile');
+    console.log('Example: auth show-post /posts/:id');
+    console.log('Example: auth show-post /posts/:user/:id/delete');
 }
 
 function createRouteComponent({ componentName, path }) {
-    const template = fs.readFileSync('./scripts/template.js', { encoding: 'utf8' });
+    const template = fs.readFileSync('./scripts/route/template.js', { encoding: 'utf8' });
     const newComponent = template.replace('COMPONENT_NAME', componentName)
     fs.mkdirSync(path.replace('/index.js', ''), { recursive: true })
     fs.writeFileSync(path, newComponent, { encoding: 'utf-8' })
@@ -41,7 +41,7 @@ function addRouteToRoutes({ type, uri, component, path }) {
 }
 
 function handler(params) {
-    const [node, script, bm, route, type, name, uri] = params
+    const [node, script, type, name, uri] = params
     if (!type || !name || !uri) return printHelp()
 
     console.log('')
