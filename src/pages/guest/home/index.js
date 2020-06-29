@@ -17,6 +17,7 @@ import RadioButton from "components/radio-button";
 import Switch from "components/switch";
 import CheckBox from "components/check-box";
 import Select from "components/select";
+import Table from "components/table";
 
 export default function HomePage() {
   const [step, setStep] = useState(0);
@@ -287,6 +288,29 @@ export default function HomePage() {
                 { value: "bar", label: "Bar" },
                 { value: "bar", label: "Bar" },
                 { value: "bar", label: "Bar" },
+              ]}
+            />
+            <Table
+              className="mt-4"
+              columns={[
+                {
+                  title: "Name",
+                  component: ({ row }) => <span>{row.name}</span>,
+                },
+                {
+                  title: "Last name",
+                  component: ({ row }) => <span>{row.lastName}</span>,
+                },
+              ]}
+              rows={[
+                {
+                  name: "franco",
+                  lastName: "montenegro",
+                },
+                {
+                  name: "lean",
+                  lastName: "Vandenbosch",
+                },
               ]}
             />
           </Card>

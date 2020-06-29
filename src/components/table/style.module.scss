@@ -1,0 +1,27 @@
+@import "../config";
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+
+  thead tr {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  tbody tr {
+    box-shadow: 0 2px 8px #d7e0e7;
+    border-radius: 5px;
+  }
+
+  th,
+  td {
+    padding: 20px;
+  }
+
+  thead th {
+    padding: 0 20px;
+  }
+}

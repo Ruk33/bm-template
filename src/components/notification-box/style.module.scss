@@ -22,24 +22,24 @@
 
 .success {
   .icon {
-    color: #87c549;
+    color: $notification-box-success-icon-color;
   }
 }
 
 .info {
   .icon {
-    color: #4db5f1;
+    color: $notification-box-info-icon-color;
   }
 }
 
 .warning {
   .icon {
-    color: #f7b629;
+    color: $notification-box-warning-icon-color;
   }
 }
 
 .error {
   .icon {
-    color: #dd4b37;
+    color: $notification-box-error-icon-color;
   }
 }

@@ -13,8 +13,8 @@
   width: 25px;
   height: 25px;
   border-radius: 5px;
-  background-color: #d3dde9;
-  color: #d3dde9;
+  background-color: $check-box-bg;
+  color: $check-box-bg;
   line-height: 26px;
   font-size: 12px;
   transition: all 150ms;
@@ -22,7 +22,7 @@
 
 .checked {
   .box {
-    color: white;
-    background-color: #5290ff;
+    color: $check-box-checked-color;
+    background-color: $check-box-checked-bg;
   }
 }

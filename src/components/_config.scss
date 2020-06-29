@@ -1,11 +1,48 @@
-$text-color: #525f7f;
-$bg-color: #f6f9fc;
+/*
+ * General
+ */
+$text-color: #525f7f !default;
+$bg-color: #f6f9fc !default;
 
+/*
+ * Input
+ */
 $input-radius: 5px !default;
 $input-border: 1px solid #cbd5e0 !default;
 $input-shadow: 0 !default;
 $input-font-size: 14px !default;
 
+$check-box-bg: #d3dde9 !default;
+$check-box-checked-bg: #5290ff !default;
+$check-box-checked-color: white !default;
+
+$radio-button-bg: #d3dde9 !default;
+$radio-border: 10px solid white !default;
+$radio-shadow: 0px 2px 2px #dae2e9 !default;
+$radio-button-checked-bg: #5290ff !default;
+
+$select-border: 1px solid #d3dde9 !default;
+$select-bg: white !default;
+$select-dropdown-icon-color: #a9bbd1 !default;
+$select-dropdown-shadow: 0 2.5px 10px #cbd3dd !default;
+$select-option-hover-bg: #f3faff !default;
+
+$switch-border: 5px solid #d3dde9 !default;
+$switch-bg: #d3dde9 !default;
+$switch-checked-bg: #3880ff !default;
+$switch-slider-bg: white !default;
+
+/*
+ * Notification box
+ */
+$notification-box-success-icon-color: #87c549 !default;
+$notification-box-info-icon-color: #4db5f1 !default;
+$notification-box-warning-icon-color: #f7b629 !default;
+$notification-box-error-icon-color: #dd4b37 !default;
+
+/*
+ * Button
+ */
 $button-primary-color: white !default;
 $button-primary-bg: #3880ff !default;
 $button-border: 0 !default;
@@ -17,10 +54,16 @@ $button-secondary-color: #4a8bfc !default;
 $button-link-bg: transparent !default;
 $button-link-color: #4a8bfc !default;
 
+/*
+ * Card
+ */
 $card-radius: 10px !default;
 $card-shadow: 0 2.5px 10px #e2e8f0 !default;
 $card-bg: white !default;
 
+/*
+ * Alert
+ */
 $alert-shadow: none !default;
 $alert-success-bg: #c6f6d5 !default;
 $alert-success-color: #38a169 !default;
@@ -31,6 +74,9 @@ $alert-info-color: #4299e1 !default;
 $alert-error-bg: #f39393 !default;
 $alert-error-color: #aa1a1a !default;
 
+/*
+ * Media
+ */
 $media-border: 1px solid #e6ecf1 !default;
 $media-shadow: 0 2.5px 10px #e2e8f0 !default;
 $media-bg: white !default;

@@ -11,14 +11,14 @@
 .radio {
   width: 30px;
   height: 30px;
-  background-color: rgb(211, 221, 233);
-  border: 10px solid white;
+  background-color: $radio-button-bg;
+  border: $radio-border;
   border-radius: 100%;
-  box-shadow: 0px 2px 2px #dae2e9;
+  box-shadow: $radio-shadow;
   margin-right: 15px;
   transition: all 300ms;
 }
 
 .checked {
-  background-color: #5290ff;
+  background-color: $radio-button-checked-bg;
 }
