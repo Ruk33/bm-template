@@ -1,7 +1,7 @@
 import React from "react";
 import Routes from "./pages";
 
-import "bootstrap/dist/css/bootstrap.css";
+import "./app.scss";
 
 export default function App() {
   return (
