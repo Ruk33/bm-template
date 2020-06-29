@@ -1,0 +1,49 @@
+@import "../config";
+
+.container {
+  position: relative;
+}
+
+.select {
+  position: relative;
+  border: 1px solid #d3dde9;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  background-color: white;
+}
+
+.icon {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  color: #a9bbd1;
+}
+
+.optionsContainer {
+  position: absolute;
+  border-radius: 5px;
+  border: 1px solid #d3dde9;
+  box-shadow: 0 2.5px 10px #cbd3dd;
+  background-color: white;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  overflow: auto;
+  max-height: 200px;
+}
+
+.option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  background-color: transparent;
+  padding: 10px;
+
+  &:hover {
+    background-color: #f3faff;
+  }
+}

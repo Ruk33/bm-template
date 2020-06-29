@@ -15,6 +15,7 @@ import { Redirect } from "react-router-dom";
 // IMPORTS
 import HomePage from "./guest/home";
 import ProfilePage from "./auth/profile";
+import LandingPage from "./guest/landing";
 // END IMPORTS
 
 const routes = {
@@ -43,6 +44,7 @@ const routes = {
 // ROUTES
 routes.guest.routes.push({ uri: "/home", component: HomePage });
 routes.auth.routes.push({ uri: "/profile", component: ProfilePage });
+routes.guest.routes.push({ uri: "/landing", component: LandingPage });
 // END ROUTES
 
 export default routes;

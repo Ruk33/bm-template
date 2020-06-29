@@ -1,0 +1,16 @@
+@import "../config";
+
+.verticalMedia {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: $media-bg;
+  text-align: center;
+}
+
+.border {
+  border: $media-border;
+}
+
+.shadow {
+  box-shadow: $media-shadow;
+}

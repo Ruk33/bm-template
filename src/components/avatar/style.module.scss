@@ -1,0 +1,23 @@
+@import "../config";
+
+.avatar {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 100%;
+}
+
+.big {
+  width: 96px;
+  height: 96px;
+}
+
+.medium {
+  width: 64px;
+  height: 64px;
+}
+
+.small {
+  width: 32px;
+  height: 32px;
+}

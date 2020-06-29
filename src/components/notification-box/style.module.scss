@@ -1,0 +1,45 @@
+@import "../config";
+
+.notificationBox {
+  padding: 20px;
+  text-align: center;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  padding: 13px;
+  margin: 0 auto;
+  border-radius: 100%;
+  border: 10px solid rgb(245, 245, 250);
+  text-align: center;
+
+  i {
+    font-size: 32px;
+    line-height: 33px;
+  }
+}
+
+.success {
+  .icon {
+    color: #87c549;
+  }
+}
+
+.info {
+  .icon {
+    color: #4db5f1;
+  }
+}
+
+.warning {
+  .icon {
+    color: #f7b629;
+  }
+}
+
+.error {
+  .icon {
+    color: #dd4b37;
+  }
+}

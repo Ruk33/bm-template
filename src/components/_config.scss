@@ -1,12 +1,36 @@
-$input-radius: 10px !default;
+$text-color: #525f7f;
+$bg-color: #f6f9fc;
+
+$input-radius: 5px !default;
 $input-border: 1px solid #cbd5e0 !default;
 $input-shadow: 0 !default;
 $input-font-size: 14px !default;
 
-$button-primary-color: #7b341e !default;
-$button-primary-bg: #ed8936 !default;
+$button-primary-color: white !default;
+$button-primary-bg: #3880ff !default;
 $button-border: 0 !default;
-$button-border-radius: 10px !default;
+$button-border-radius: 8px !default;
+
+$button-secondary-bg: #e4f1fd;
+$button-secondary-color: #4a8bfc !default;
+
+$button-link-bg: transparent !default;
+$button-link-color: #4a8bfc !default;
 
 $card-radius: 10px !default;
 $card-shadow: 0 2.5px 10px #e2e8f0 !default;
+$card-bg: white !default;
+
+$alert-shadow: none !default;
+$alert-success-bg: #c6f6d5 !default;
+$alert-success-color: #38a169 !default;
+$alert-warning-bg: #ffe892 !default;
+$alert-warning-color: #b7791f !default;
+$alert-info-bg: #bee3f8 !default;
+$alert-info-color: #4299e1 !default;
+$alert-error-bg: #f39393 !default;
+$alert-error-color: #aa1a1a !default;
+
+$media-border: 1px solid #e6ecf1 !default;
+$media-shadow: 0 2.5px 10px #e2e8f0 !default;
+$media-bg: white !default;

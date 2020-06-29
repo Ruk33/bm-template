@@ -1,9 +1,37 @@
 @import "../config";
 
-.primary {
-  background-color: $button-primary-bg;
-  padding: 15px 25px;
+.button {
+  text-transform: uppercase;
   border-radius: $button-border-radius;
   border: $button-border;
+  padding: 8px 18px;
+  font-weight: bold;
+  transition: 300ms all ease;
+}
+
+.primary {
+  background-color: $button-primary-bg;
   color: $button-primary-color;
+
+  &:hover {
+    background-color: lighten($button-primary-bg, 5%);
+  }
+}
+
+.secondary {
+  background-color: $button-secondary-bg;
+  color: $button-secondary-color;
+
+  &:hover {
+    background-color: lighten($button-secondary-bg, 5%);
+  }
+}
+
+.link {
+  background-color: $button-link-bg;
+  color: $button-link-color;
+
+  &:hover {
+    color: darken($button-link-color, 10%);
+  }
 }

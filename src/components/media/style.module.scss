@@ -1,0 +1,15 @@
+@import "../config";
+
+.media {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: $media-bg;
+}
+
+.border {
+  border: $media-border;
+}
+
+.shadow {
+  box-shadow: $media-shadow;
+}

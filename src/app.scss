@@ -1,5 +1,11 @@
+@import "./components/config";
+
+@import "~@fortawesome/fontawesome-free/css/all.css";
 @import "~bootstrap/dist/css/bootstrap.css";
 
 body {
   font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  color: $text-color;
+  background-color: $bg-color;
 }
