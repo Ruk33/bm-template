@@ -95,6 +95,11 @@ export default function HomePage() {
               </Button>
             </div>
             <div className="my-3">
+              <Button loading kind="primary" type="button">
+                Primary button
+              </Button>
+            </div>
+            <div className="my-3">
               <Button kind="secondary" type="button">
                 Secondary button
               </Button>

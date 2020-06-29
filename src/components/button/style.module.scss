@@ -30,6 +30,8 @@
 .link {
   background-color: $button-link-bg;
   color: $button-link-color;
+  padding-left: 0;
+  padding-right: 0;
 
   &:hover {
     color: darken($button-link-color, 10%);
