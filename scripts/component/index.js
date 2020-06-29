@@ -17,7 +17,11 @@ function createComponent({ componentName, path }) {
     const newComponent = template.replace('COMPONENT_NAME', componentName)
     fs.mkdirSync(path.replace('/index.js', ''), { recursive: true })
     fs.writeFileSync(path, newComponent, { encoding: 'utf-8' })
-    fs.writeFileSync(path.replace('index.js', 'style.module.scss'), '', { encoding: 'utf-8' })
+    fs.writeFileSync(
+        path.replace('index.js', 'style.module.scss'),
+        '@import "../config";',
+        { encoding: 'utf-8' }
+    )
 }
 
 function handler(params) {
