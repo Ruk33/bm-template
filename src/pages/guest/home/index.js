@@ -18,6 +18,7 @@ import Switch from "components/switch";
 import CheckBox from "components/check-box";
 import Select from "components/select";
 import Table from "components/table";
+import AutoComplete from "components/auto-complete";
 
 export default function HomePage() {
   const [step, setStep] = useState(0);
@@ -283,8 +284,23 @@ export default function HomePage() {
             </Row>
             <Switch onChange={setSwitchExample} value={switchExample} />
             <Select
+              className="my-4"
               value={selectExample}
               onChange={setSelectExample}
+              options={[
+                { value: "foo", label: "Foo" },
+                { value: "bar", label: "Bar" },
+                { value: "bar", label: "Bar" },
+                { value: "bar", label: "Bar" },
+                { value: "bar", label: "Bar" },
+                { value: "bar", label: "Bar" },
+                { value: "bar", label: "Bar" },
+              ]}
+            />
+            <AutoComplete
+              value={selectExample}
+              onChange={setSelectExample}
+              onSearch={() => {}}
               options={[
                 { value: "foo", label: "Foo" },
                 { value: "bar", label: "Bar" },

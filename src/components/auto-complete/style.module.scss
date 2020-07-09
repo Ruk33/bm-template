@@ -4,24 +4,6 @@
   position: relative;
 }
 
-.select {
-  position: relative;
-  border: $select-border;
-  padding: 10px 20px;
-  border-radius: 5px;
-  display: block;
-  width: 100%;
-  text-align: left;
-  background-color: $select-bg;
-}
-
-.icon {
-  position: absolute;
-  right: 20px;
-  top: 12px;
-  color: $select-dropdown-icon-color;
-}
-
 .optionsContainer {
   position: absolute;
   border-radius: 5px;
@@ -41,7 +23,7 @@
   text-align: left;
   border: 0;
   background-color: transparent;
-  padding: 10px 20px;
+  padding: 10px;
 
   &:hover {
     background-color: $select-option-hover-bg;

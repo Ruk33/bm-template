@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import classnames from "classnames";
 import styles from "./style.module.scss";
 
-export default function Select({ value, onChange, options }) {
+export default function Select({ className, value, onChange, options }) {
   const node = useRef();
   const [optionsVisible, setOptionsVisible] = useState(false);
   const onSelect = (option) => {
@@ -21,7 +21,7 @@ export default function Select({ value, onChange, options }) {
     };
   }, []);
   return (
-    <div ref={node} className={styles.container}>
+    <div ref={node} className={classnames(className, styles.container)}>
       <button
         type="button"
         className={styles.select}
